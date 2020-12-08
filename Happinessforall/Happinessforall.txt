@@ -1,0 +1,17 @@
+Description of the project
+
+In this python project, I have implemented a live dashboard for COVID 19 spread analysis. This dashboard will provide many insightful visualizations for the study of coronavirus spread.
+
+Libraries required to run this application- 
+Pandas-
+pip install pandas
+Flask- 
+pip install Flask
+Folium-
+pip install folium
+
+To run the application-
+From the current directory in the terminal type-
+python app.py
+
+Click on the link which is displayed in the terminal and then your application will start on your default borswer.
