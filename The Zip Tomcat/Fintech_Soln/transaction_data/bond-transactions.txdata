@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "bondExists",
+        "transactionLabel": "A test bondExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createBond",
+        "transactionLabel": "A test createBond transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readBond",
+        "transactionLabel": "A test readBond transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateBond",
+        "transactionLabel": "A test updateBond transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteBond",
+        "transactionLabel": "A test deleteBond transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]
