@@ -29,17 +29,63 @@ if selected == '1':
             print("Squamous cell carcinoma,NON MELANOMA SKIN CANCER,POSITVE")
 elif selected =='2':
       model = load_model('brain_tumor.hdf5')
+      test_image = image.load_img('image location.jpeg',
+                                  target_size=(32, 32))
+      test_image = image.img_to_array(test_image)
+      test_image = np.expand_dims(test_image, axis=0)
+      prediction = model.predict(test_image)
+      print(prediction)
+      print(prediction.shape)
+      if (prediction[0][0] == 1):
+            print("POSITIVE")
+      elif (prediction[0][1] == 1):
+            print("NEGATIVE")
 
 elif selected =='3':
       model = load_model('diabetes.hdf5')
-
+      test_image = image.load_img('image location.jpeg',
+                                  target_size=(32, 32))
+      test_image = image.img_to_array(test_image)
+      test_image = np.expand_dims(test_image, axis=0)
+      prediction = model.predict(test_image)
+      print(prediction)
+      print(prediction.shape)
+      if (prediction[0][0] == 1):
+            print("POSITIVE")
+      elif (prediction[0][1] == 1):
+            print("NEGATIVE")
 elif selected =='4':
       model = load_model('heart_disease.sav')
 
 elif selected =='5':
       model = load_model('breast_cancer.hdf5')
+       model = load_model('diabetes.hdf5')
+      test_image = image.load_img('image location.jpeg',
+                                  target_size=(32, 32))
+      test_image = image.img_to_array(test_image)
+      test_image = np.expand_dims(test_image, axis=0)
+      prediction = model.predict(test_image)
+      print(prediction)
+      print(prediction.shape)
+      if (prediction[0][0] == 1):
+            print("POSITIVE")
+      elif (prediction[0][1] == 1):
+            print("NEGATIVE")
+      
 elif selected =='6':
       model = load_model('Covid19.hdf5')
+       model = load_model('diabetes.hdf5')
+      test_image = image.load_img('image location.jpeg',
+                                  target_size=(32, 32))
+      test_image = image.img_to_array(test_image)
+      test_image = np.expand_dims(test_image, axis=0)
+      prediction = model.predict(test_image)
+      print(prediction)
+      print(prediction.shape)
+      if (prediction[0][0] == 1):
+            print("POSITIVE")
+      elif (prediction[0][1] == 1):
+            print("NEGATIVE")
 
 else:
       print("invalid response")
